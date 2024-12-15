@@ -10,7 +10,7 @@ export const authapi = createApi({
   endpoints: (build) => ({
     signin: build.mutation({
       query: (body) => {
-        return { url: "", method: "POST", body };
+        return { url: "/users/login", method: "POST", body };
       },
     }),
     signup: build.mutation({

@@ -11,3 +11,13 @@ export interface ISignup {
   password: string;
   gender: string;
 }
+
+export interface ISignInForm {
+  id:keyof IFormInputSignIn,
+  label:string,
+  type:string
+} 
+export interface IFormInputSignIn {
+  email: string
+  password: string
+}

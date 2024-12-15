@@ -1,4 +1,4 @@
-import { IFormSignup } from "@/Interface";
+import { IFormSignup,ISignInForm } from "@/Interface";
 
 export const FormSignup: IFormSignup[] = [
   {
@@ -22,3 +22,15 @@ export const FormSignup: IFormSignup[] = [
     type: "number",
   },
 ];
+
+export const SignInFormData :ISignInForm[] =[
+  {
+    id:"email",
+    label:"Email",
+    type:"email"
+  },{
+    id:"password",
+    label:"Password",
+    type:"password"
+  }
+]

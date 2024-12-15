@@ -15,3 +15,11 @@ export const signupSchema = yup.object({
     .min(11, " Enter vaild phone number"),
   gender: yup.string().required("Gender is required"),
 });
+
+export const signinSchema = yup.object({
+  email: yup.string().required("Email is required").email("Enter vaild email"),
+  password: yup
+    .string()
+    .required("Password is required")
+    .min(3, "Password should be at least 3 character or number"),
+});
