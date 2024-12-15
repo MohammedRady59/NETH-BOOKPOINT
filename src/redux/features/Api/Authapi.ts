@@ -15,7 +15,7 @@ export const authapi = createApi({
     }),
     signup: build.mutation({
       query: (body) => {
-        return { url: "", method: "POST", body };
+        return { url: "/users/signup", method: "POST", body };
       },
     }),
   }),
